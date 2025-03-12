@@ -12,7 +12,26 @@ const Dashboard = () => {
         </div>
         <SearchComponent />
         <Category />
-        <CardComponent />
+        <CardComponent 
+          jobs = {[
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+        ]}
+        title={"Featured Jobs"}
+        />
+        <CardComponent 
+          jobs = {[
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+        ]}
+        title={"Recommended Jobs"}
+        />
     </div>
   )
 }
