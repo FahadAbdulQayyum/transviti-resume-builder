@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="logo">
                 <Image src="/assets/logo.svg" alt="Profile" width={40} height={40} />
             </div>
-            <div className="logoTitle mx-3 text-foreground font-bold">Find Jobs</div>
+            <div className="logoTitle mx-3 text-foreground font-bold text-[16px]">Find Jobs</div>
             <ul className="flex space-x-4 text-textClr">
                 <li>Top Companies</li>
                 <li>Job Tracker</li>
@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className="right-side flex items-center">
             <div className="flex space-x-2 p-3 rounded-lg mx-2 bg-[#F6F9FF]">
-                <Image src="/assets/search.svg" alt="search" width={20} height={20} />
+                <Image src="/assets/search.svg" alt="search" width={15} height={15} />
                 <input type="text" placeholder="Search" className="bg-[#F6F9FF]" />
             </div>
             <button className="bg-foreground text-primary p-2 rounded-lg">Resume Builder</button>
