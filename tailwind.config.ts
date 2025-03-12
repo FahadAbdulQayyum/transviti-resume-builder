@@ -14,6 +14,7 @@ const config: Config = {
       colors: {
         background: "#F4F4F4",
         textClr: "#737A91",
+        textClr2: "#585D6E",
         primary: "#FFFFFF",
         foreground: "#0154AA",
       },

@@ -1,11 +1,12 @@
 import React from 'react'
 import ProfileCard from '../ProfileCard'
+import Dashboard from '../Dashboard'
 
 const Home = () => {
   return (
-    <div className='bg-background py-5 px-standardPadding'>
+    <div className='flex bg-background py-5 px-standardPadding space-x-4'>
         <ProfileCard/>
-        <div className="right-card"></div>
+        <Dashboard />
     </div>
   )
 }

@@ -36,7 +36,7 @@ const ProfileCard = () => {
 
       {/* User Info */}
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-opacity-80 text-center z-10">
-        <h1 className="text-lg font-bold text-gray-800">Albert Flores</h1>
+        <h1 className="text-lg font-bold font-neueHaas text-gray-800">Albert Flores</h1>
         <p className="text-sm text-gray-600">
           Senior Product Designer | UI/UX Designer | Graphic Designer | Web...
         </p>
@@ -58,7 +58,7 @@ const ProfileCard = () => {
         </div>
       ))}
     </div>
-    <CalendarSection/>
+        <CalendarSection/>
     </div>
   );
 };
