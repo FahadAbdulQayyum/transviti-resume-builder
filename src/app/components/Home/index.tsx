@@ -4,7 +4,7 @@ import Dashboard from '../Dashboard'
 
 const Home = () => {
   return (
-    <div className='flex flex-col md:flex-row bg-background py-5 px-standardPadding space-y-3 sm:space-y-3 md:space-x-4'>
+    <div className='flex flex-col md:flex-row bg-background py-5 px-4 sm:px-standardPadding space-y-3 sm:space-y-3 md:space-x-4'>
         <ProfileCard/>
         <Dashboard />
     </div>

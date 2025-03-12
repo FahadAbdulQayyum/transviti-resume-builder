@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="bg-white flex justify-between items-center px-standardPadding py-2"
+      className="bg-white flex justify-between items-center px-4 sm:px-standardPadding py-2"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -124,7 +124,7 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
-            <ul className="space-y-2 text-textClr p-4">
+            <ul className="space-y-6 text-textClr p-4">
               <li>Top Companies</li>
               <li>Job Tracker</li>
               <li>My Calendar</li>
