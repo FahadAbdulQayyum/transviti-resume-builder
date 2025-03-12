@@ -17,7 +17,7 @@ const CalendarSection = () => {
   ];
 
   return (
-    <div className="space-y-4 bg-white">
+    <div className="space-y-4 bg-white rounded-lg">
       {/* Container for "My Calendar" and Dropdown */}
       <div className="w-full">
         {/* My Calendar Title */}
