@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        neueHaas: ['NeueHaasDisplayBlack', 'sans-serif'],
+      },
       colors: {
         background: "#F4F4F4",
         textClr: "#737A91",

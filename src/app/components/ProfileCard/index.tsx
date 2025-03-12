@@ -1,9 +1,16 @@
 "use client"
 
 import Image from "next/image";
+import CalendarSection from "../CalendarSection";
 
 const ProfileCard = () => {
+    const stats = [
+        { label: "Profile Visitors", value: "140" },
+        { label: "Resume Viewers", value: "20" },
+        { label: "My Jobs", value: "88" },
+      ];
   return (
+    <div className="w-[346px] space-y-2">
     <div className="left-card bg-cover bg-white bg-center rounded-lg overflow-hidden shadow-lg relative h-[248px] w-[346px]">
       {/* Background Image */}
       <Image
@@ -35,6 +42,23 @@ const ProfileCard = () => {
         </p>
         <small className="text-xs text-gray-500 block mt-1">Clinton, Maryland</small>
       </div>
+    </div>
+    <div
+        className="bg-white rounded-lg shadow-lg"
+    >
+    {stats.map((stat, index) => (
+        <div
+          key={index}
+          className={`flex justify-between items-center ${
+            index < stats.length - 1 ? "border-b border-gray-200 pb-2" : "pt-2"
+          } p-4`}
+        >
+          <p className="text-gray-700">{stat.label}</p>
+          <p className="text-foreground font-semibold">{stat.value}</p>
+        </div>
+      ))}
+    </div>
+    <CalendarSection/>
     </div>
   );
 };
