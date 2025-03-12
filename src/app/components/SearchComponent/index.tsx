@@ -17,7 +17,7 @@ const SearchComponent: React.FC = () => {
   };
 
   return (
-    <div className="flex space-x-4 w-full bg-white p-3 rounded-lg">
+    <div className="flex flex-col md:flex-row sm:space-x-4 w-full bg-white p-3 rounded-lg">
       {/* Search Input */}
       <input
         type="text"
@@ -45,7 +45,7 @@ const SearchComponent: React.FC = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-        <Image src="/assets/search-white.svg" alt="search" width={15} height={15} />
+        <Image src="/assets/search-white.svg" alt="search" width={15} height={15} className="mx-5 lg:mx-0"/>
           <p>Search</p>
         </motion.button>
     </div>

@@ -27,7 +27,7 @@ const CardComponent: React.FC<CardComponentProps> = ({ jobs, title }) => {
       </div>
 
       {/* Job Cards Grid */}
-      <div className="grid grid-cols-5 gap-4 py-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-3">
         {jobs.map((job, index) => (
           <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
             <span className="space-y-1">
