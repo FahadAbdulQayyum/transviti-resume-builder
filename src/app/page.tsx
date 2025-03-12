@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 
 export default function HomePage() {
   return (
-    <div className="font-neueHaas">
+    <div>
       <Navbar />
       <Home />
     </div>

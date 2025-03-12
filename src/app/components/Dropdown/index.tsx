@@ -33,7 +33,7 @@ const Dropdown: React.FC<DropdownProps> = ({
         onClick={() => setIsOpen(!isOpen)}
         className="flex justify-between items-center w-full px-4 py-2 rounded-lg shadow-sm text-left focus:outline-none"
       >
-        <small className="text-gray-500 truncate -mx-1 font-neueHaas font-[100]">
+        <small className="text-gray-500 truncate -mx-1 font-[100]">
           {selectedOption}
         </small>
         {/* Dropdown Icon */}
