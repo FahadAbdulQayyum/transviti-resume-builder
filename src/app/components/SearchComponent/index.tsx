@@ -22,7 +22,8 @@ const SearchComponent: React.FC = () => {
       <input
         type="text"
         placeholder="Job Title, Company, or Keywords"
-        className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+        // className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+        className="w-full px-4 py-2 focus:outline-none"
       />
 
       {/* Location Dropdown */}
@@ -40,12 +41,12 @@ const SearchComponent: React.FC = () => {
       />
         {/* Resume Builder Button (Hidden on Small Screens) */}
         <motion.button
-          className="flex bg-foreground text-primary p-2 rounded-lg"
+          className="flex bg-foreground text-primary p-2 rounded-lg w-full space-x-2 items-center justify-center"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-        <Image src="/assets/search.svg" alt="search" width={15} height={15} />
-          Search
+        <Image src="/assets/search-white.svg" alt="search" width={15} height={15} />
+          <p>Search</p>
         </motion.button>
     </div>
   );
