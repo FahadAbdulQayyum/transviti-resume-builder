@@ -4,6 +4,14 @@ import Category from '../Category'
 import CardComponent from '../CardComponent'
 
 const Dashboard = () => {
+  const data = [
+    {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+    {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+    {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+    {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+    {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
+]
+
   return (
     <div className='w-full space-y-4'>
         <div className='leading-5'>
@@ -13,23 +21,11 @@ const Dashboard = () => {
         <SearchComponent />
         <Category />
         <CardComponent 
-          jobs = {[
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-        ]}
+          jobs = {data}
         title={"Featured Jobs"}
         />
         <CardComponent 
-          jobs = {[
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-            {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},
-        ]}
+          jobs = {data}
         title={"Recommended Jobs"}
         />
     </div>
