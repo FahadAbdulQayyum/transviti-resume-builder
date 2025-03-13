@@ -8,6 +8,7 @@ interface CardComponentProps {
   title: string; // Title of the card section
 }
 
+// CardComponent displays a list of job cards
 const CardComponent: React.FC<CardComponentProps> = ({ jobs, title }) => {
   return (
     <div className="py-2">

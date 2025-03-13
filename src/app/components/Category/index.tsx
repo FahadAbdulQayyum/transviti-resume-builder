@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Category component displays a list of similar job categories
 const Category = () => {
     const Buttons = [
         {btnName: 'Frontend'},

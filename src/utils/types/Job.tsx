@@ -6,4 +6,4 @@ export interface Job {
     location: string;
     day: number;
     applicants: number;
-  }
+}

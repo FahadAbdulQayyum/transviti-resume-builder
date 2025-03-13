@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// CalendarSection component displays a dropdown for selecting calendar events
 const CalendarSection = () => {
   // State to track the selected option and dropdown visibility
   const [selectedOption, setSelectedOption] = useState("Upcoming Interviews");

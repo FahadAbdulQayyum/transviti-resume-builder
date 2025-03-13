@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { DropdownProps } from "@/utils/types/DropdownProps";
 
+// Dropdown component allows users to select an option from a list of options
 const Dropdown: React.FC<DropdownProps> = ({
   options,
   placeholder = "Select", // Default placeholder
@@ -40,7 +41,7 @@ const Dropdown: React.FC<DropdownProps> = ({
         >
           <path
             fillRule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 111.414 1.414l-4 4a1 1 01-1.414 0l-4-4a1 1 0 010-1.414z"
             clipRule="evenodd"
           />
         </svg>
