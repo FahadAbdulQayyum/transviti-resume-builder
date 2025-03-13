@@ -1,52 +1,25 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import SearchComponent from "../SearchComponent";
 import Category from "../Category";
 import CardComponent from "../CardComponent";
 
 // Dashboard component displays the main dashboard with job listings and search functionality
 const Dashboard = () => {
-  const data = [
-    {
-      title: "UI/UX Designer",
-      logo: "/assets/teams.svg",
-      platform: "Teams",
-      location: "Seattle, USA (Remote)",
-      day: 1,
-      applicants: 22,
-    },
-    {
-      title: "UI/UX Designer",
-      logo: "/assets/teams.svg",
-      platform: "Teams",
-      location: "Seattle, USA (Remote)",
-      day: 1,
-      applicants: 22,
-    },
-    {
-      title: "UI/UX Designer",
-      logo: "/assets/teams.svg",
-      platform: "Teams",
-      location: "Seattle, USA (Remote)",
-      day: 1,
-      applicants: 22,
-    },
-    {
-      title: "UI/UX Designer",
-      logo: "/assets/teams.svg",
-      platform: "Teams",
-      location: "Seattle, USA (Remote)",
-      day: 1,
-      applicants: 22,
-    },
-    {
-      title: "UI/UX Designer",
-      logo: "/assets/teams.svg",
-      platform: "Teams",
-      location: "Seattle, USA (Remote)",
-      day: 1,
-      applicants: 22,
-    },
-  ];
+
+  const [dataArray, setDataArray] = useState([]);
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetch("/data.json");
+      const res = await data.json();
+      console.log('...data...', res);
+      setDataArray(res.data);
+    }
+
+    fetchData();
+  }, []);
 
   return (
     <div className="w-full space-y-4">
@@ -61,8 +34,8 @@ const Dashboard = () => {
       </div>
       <SearchComponent />
       <Category />
-      <CardComponent jobs={data} title={"Featured Jobs"} />
-      <CardComponent jobs={data} title={"Recommended Jobs"} />
+      <CardComponent jobs={dataArray} title={"Featured Jobs"} />
+      <CardComponent jobs={dataArray} title={"Recommended Jobs"} />
     </div>
   );
 };
