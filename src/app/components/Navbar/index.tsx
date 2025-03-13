@@ -50,8 +50,9 @@ const Navbar = () => {
 
         {/* Desktop Menu (Hidden on Small Screens) */}
         <span className="hidden lg:flex space-x-4 text-textClr">
-          {Menu.map((v) => (
+          {Menu.map((v, i) => (
             <motion.ul
+              key={i}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.5 }}
@@ -135,8 +136,8 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <ul className="space-y-6 text-textClr p-4">
-              {Menu.map((v) => (
-                <li>
+              {Menu.map((v, i) => (
+                <li key={i}>
                   <Link href={v.href}>{v.label}</Link>
                 </li>
               ))}
