@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Transviti FrontEnd Test
 
-## Getting Started
+This project is a frontend application developed using Next.js. It includes various components such as a Navbar, ProfileCard, Dashboard, and more. The application is styled using Tailwind CSS and custom fonts.
 
-First, run the development server:
+## Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **src/app/layout.tsx**: Main layout component that includes the Navbar and sets up the global styles and fonts.
+- **src/app/globals.css**: Global CSS file that includes Tailwind CSS base, components, and utilities, as well as custom styles and font definitions.
+- **src/app/components/Navbar/index.tsx**: Navbar component that provides navigation links and search functionality.
+- **src/app/components/ProfileCard/index.tsx**: ProfileCard component that displays user profile information and statistics.
+- **src/app/components/Home/index.tsx**: Home component that serves as the main container for the ProfileCard and Dashboard components.
+- **src/app/components/Dropdown/index.tsx**: Dropdown component that allows users to select an option from a list of options.
+- **src/app/components/Dashboard/index.tsx**: Dashboard component that displays the main dashboard with job listings and search functionality.
+- **src/app/components/Category/index.tsx**: Category component that displays a list of similar job categories.
+- **src/app/components/CardComponent/index.tsx**: CardComponent that displays a list of job cards.
+- **src/app/components/CalendarSection/index.tsx**: CalendarSection component that displays a dropdown for selecting calendar events.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup and Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/FahadAbdulQayyum/transviti-resume-builder.git
+   cd transviti
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Open the application**:
+   Open your browser and navigate to `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Navbar**: Provides navigation links and a search bar.
+- **ProfileCard**: Displays user profile information and statistics.
+- **Home**: Main container for the ProfileCard and Dashboard components.
+- **Dropdown**: Allows users to select an option from a list of options.
+- **Dashboard**: Displays job listings and search functionality.
+- **Category**: Displays a list of similar job categories.
+- **CardComponent**: Displays a list of job cards.
+- **CalendarSection**: Displays a dropdown for selecting calendar events.
 
-## Deploy on Vercel
+## Custom Fonts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project uses custom fonts defined in the `globals.css` file. Ensure that the font files are placed in the correct directory (`/fonts/`).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+If you would like to contribute to this project, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
