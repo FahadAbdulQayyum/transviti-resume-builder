@@ -3,11 +3,22 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const Navbar = () => {
   // State to manage the mobile menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const Menu = [
+    { label: "Top Companies", href: "TopCompany" },
+    { label: "Job Tracker", href: "TopCompany" },
+    { label: "Job Tracker", href: "TopCompany" },
+    { label: "My Calendar", href: "TopCompany" },
+    { label: "Documents", href: "TopCompany" },
+    { label: "Messages", href: "TopCompany" },
+    { label: "Notifications", href: "TopCompany" },
+  ];
+  
   return (
     <motion.div
       className="bg-white flex justify-between items-center px-4 sm:px-standardPadding py-2"
@@ -37,19 +48,17 @@ const Navbar = () => {
         </motion.div>
 
         {/* Desktop Menu (Hidden on Small Screens) */}
-        <motion.ul
-          className="hidden lg:flex space-x-4 text-textClr"
+        <span 
+            className="hidden lg:flex space-x-4 text-textClr"
+        >
+        {Menu.map(v=> <motion.ul
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          <li>Top Companies</li>
-          <li>Job Tracker</li>
-          <li>My Calendar</li>
-          <li>Documents</li>
-          <li>Messages</li>
-          <li>Notifications</li>
-        </motion.ul>
+          <li>{v.label}</li>
+          </motion.ul>)}
+        </span>
 
         {/* Hamburger Menu (Visible on Small Screens) */}
         <button
@@ -125,12 +134,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <ul className="space-y-6 text-textClr p-4">
-              <li>Top Companies</li>
-              <li>Job Tracker</li>
-              <li>My Calendar</li>
-              <li>Documents</li>
-              <li>Messages</li>
-              <li>Notifications</li>
+              {Menu.map(v=><li><Link href={v.href}>{v.label}</Link></li>)}
             </ul>
           </motion.div>
         )}
