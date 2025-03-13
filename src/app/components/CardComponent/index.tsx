@@ -1,15 +1,6 @@
+import { Job } from '@/utils/types/Job';
 import Image from 'next/image';
 import React from 'react';
-
-// Define the type for a single job object
-interface Job {
-  title: string;
-  logo: string;
-  platform: string;
-  location: string;
-  day: number;
-  applicants: number;
-}
 
 // Define the props for the CardComponent
 interface CardComponentProps {
