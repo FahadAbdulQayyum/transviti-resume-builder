@@ -5,6 +5,7 @@ import Dropdown from "../Dropdown"; // Import the reusable Dropdown component
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+// SearchComponent allows users to search for jobs by title, location, and category
 const SearchComponent: React.FC = () => {
   // Handle Location Selection
   const handleLocationSelect = (location: string) => {

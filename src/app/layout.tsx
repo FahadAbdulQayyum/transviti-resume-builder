@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description: "Developed by Fahad Abdul Qayyum",
 };
 
+// RootLayout component serves as the main layout for the application
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -3,6 +3,7 @@ import SearchComponent from '../SearchComponent'
 import Category from '../Category'
 import CardComponent from '../CardComponent'
 
+// Dashboard component displays the main dashboard with job listings and search functionality
 const Dashboard = () => {
   const data = [
     {title: "UI/UX Designer", logo: "/assets/teams.svg", platform: "Teams", location: "Seattle, USA (Remote)", day: 1, applicants: 22},

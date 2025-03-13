@@ -5,6 +5,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
+// Navbar component provides navigation links and search functionality
 const Navbar = () => {
   // State to manage the mobile menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);

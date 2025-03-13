@@ -50,7 +50,7 @@ const CardComponent: React.FC<CardComponentProps> = ({ jobs, title }) => {
 
               {/* Action Buttons */}
               <div className="flex justify-between pt-2">
-                <button className="bg-foreground text-primary p-2 px-8 rounded-lg font-neueHaas text-xs">
+                <button className="bg-foreground text-primary p-2 px-8 rounded-lg font-neueHaas text-xs hover:scale-105 duration-200">
                   Apply Now
                 </button>
                 <Image src="/assets/saveIcon.svg" alt="save" width={12} height={12} />

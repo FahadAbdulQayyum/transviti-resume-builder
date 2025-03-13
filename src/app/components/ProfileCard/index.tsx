@@ -3,6 +3,7 @@
 import Image from "next/image";
 import CalendarSection from "../CalendarSection";
 
+// ProfileCard component displays user profile information and statistics
 const ProfileCard = () => {
     const stats = [
         { label: "Profile Visitors", value: "140" },
