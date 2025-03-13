@@ -28,6 +28,7 @@ const config: Config = {
         textClr3: "#737A91",
         primary: "#FFFFFF",
         foreground: "#0154AA",
+        'custom-blue': '#0154AA',
       },
       padding: {
         standardPadding: '2rem',
