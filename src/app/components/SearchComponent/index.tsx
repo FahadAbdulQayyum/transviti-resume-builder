@@ -25,13 +25,17 @@ const SearchComponent: React.FC = () => {
         // className="w-full px-4 py-2 border border-gray-300 rounded-lg"
         className="w-full px-4 py-2 focus:outline-none"
       />
-
+      
+      <span className="border border-solid"/>
+      
       {/* Location Dropdown */}
       <Dropdown
         options={["Select Locations", "New York", "San Francisco", "London"]}
         placeholder="Select Locations"
         onSelect={handleLocationSelect}
       />
+
+      <span className="border border-solid"/>
 
       {/* Category Dropdown */}
       <Dropdown
