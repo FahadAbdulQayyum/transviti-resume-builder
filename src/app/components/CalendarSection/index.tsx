@@ -22,7 +22,7 @@ const CalendarSection = () => {
       {/* Container for "My Calendar" and Dropdown */}
       <div className="w-full">
         {/* My Calendar Title */}
-        <h1 className="text-base font-bold text-gray-800 font-neueHaas p-3 -mb-6">
+        <h1 className="text-base font-bold text-gray-800 p-3 -mb-6">
           My Calendar
         </h1>
 
@@ -33,7 +33,7 @@ const CalendarSection = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="flex justify-between items-center w-full px-4 py-2 rounded-lg shadow-sm text-left focus:outline-none"
           >
-            <small className="text-gray-500 truncate -mx-1 font-neueHaas font-[100]">
+            <small className="text-gray-500 truncate -mx-1 font-[100]">
               {selectedOption === "Upcoming Interviews"
                 ? "Upcoming interviews"
                 : selectedOption}

@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-neue-haas: 'NeueHaasDisplayBlack', Arial, Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +18,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'NeueHaasDisplayBlack', Arial, Helvetica, sans-serif; /* Use the custom font as the primary font */
+  font-family: var(--font-neue-haas); /* Use the custom font as the primary font */
   font-size: 14px;
 }
 
@@ -29,12 +30,11 @@ body {
 
 @font-face {
   font-family: 'NeueHaasDisplayBlack'; /* Name of the font */
-  src: url('/fonts/NeueHaasDisplayBlack.ttf') format('ttf'), /* Preferred format */
-       url('/fonts/NeueHaasDisplayBlack.ttf') format('ttf');    /* Fallback format */
+  src: url('/fonts/NeueHaasDisplayBlack.ttf') format('truetype'); /* Ensure this path is correct */
   font-weight: normal; /* Adjust as needed */
   font-style: normal;  /* Adjust as needed */
 }
 
 h1 {
-  font-family: 'NeueHaasDisplayBlack', serif; /* Apply the custom font to headings */
+  font-family: var(--font-neue-haas); /* Apply the custom font to headings */
 }
