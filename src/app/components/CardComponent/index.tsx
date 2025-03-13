@@ -1,6 +1,6 @@
-import { Job } from '@/utils/types/Job';
-import Image from 'next/image';
-import React from 'react';
+import { Job } from "@/utils/types/Job";
+import Image from "next/image";
+import React from "react";
 
 // Define the props for the CardComponent
 interface CardComponentProps {
@@ -15,7 +15,9 @@ const CardComponent: React.FC<CardComponentProps> = ({ jobs, title }) => {
       {/* Header Section */}
       <div className="flex items-center space-x-2">
         <h1 className="text-xl">{title}</h1>
-        <small className="text-foreground border-b border-foreground">See {title}</small>
+        <small className="text-foreground border-b border-foreground">
+          See {title}
+        </small>
       </div>
 
       {/* Job Cards Grid */}
@@ -37,15 +39,28 @@ const CardComponent: React.FC<CardComponentProps> = ({ jobs, title }) => {
 
               {/* Location */}
               <div className="flex space-x-2 text-textClr">
-                <Image src="/assets/locationIcon.svg" alt="location" width={12} height={12} />
+                <Image
+                  src="/assets/locationIcon.svg"
+                  alt="location"
+                  width={12}
+                  height={12}
+                />
                 <small>{job.location}</small>
               </div>
 
               {/* Time and Applicants */}
               <div className="flex space-x-2 text-textClr">
-                <Image src="/assets/clockIcon.svg" alt="clock" width={12} height={12} />
+                <Image
+                  src="/assets/clockIcon.svg"
+                  alt="clock"
+                  width={12}
+                  height={12}
+                />
                 <small>
-                  {job.day + " day ago"} | <span className="text-foreground">{job.applicants + " applicants"}</span>
+                  {job.day + " day ago"} |{" "}
+                  <span className="text-foreground">
+                    {job.applicants + " applicants"}
+                  </span>
                 </small>
               </div>
 
@@ -54,7 +69,12 @@ const CardComponent: React.FC<CardComponentProps> = ({ jobs, title }) => {
                 <button className="bg-foreground text-primary p-2 px-8 rounded-lg text-xs hover:scale-105 duration-200">
                   Apply Now
                 </button>
-                <Image src="/assets/saveIcon.svg" alt="save" width={12} height={12} />
+                <Image
+                  src="/assets/saveIcon.svg"
+                  alt="save"
+                  width={12}
+                  height={12}
+                />
               </div>
             </span>
           </div>

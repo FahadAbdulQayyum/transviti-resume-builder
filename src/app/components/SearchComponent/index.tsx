@@ -26,9 +26,9 @@ const SearchComponent: React.FC = () => {
         // className="w-full px-4 py-2 border border-gray-300 rounded-lg"
         className="w-full px-4 py-2 focus:outline-none"
       />
-      
-      <span className="border border-solid"/>
-      
+
+      <span className="border border-solid" />
+
       {/* Location Dropdown */}
       <Dropdown
         options={["Select Locations", "New York", "San Francisco", "London"]}
@@ -36,7 +36,7 @@ const SearchComponent: React.FC = () => {
         onSelect={handleLocationSelect}
       />
 
-      <span className="border border-solid"/>
+      <span className="border border-solid" />
 
       {/* Category Dropdown */}
       <Dropdown
@@ -44,15 +44,21 @@ const SearchComponent: React.FC = () => {
         placeholder="Job Type"
         onSelect={handleCategorySelect}
       />
-        {/* Resume Builder Button (Hidden on Small Screens) */}
-        <motion.button
-          className="flex bg-foreground text-primary p-2 rounded-lg w-full space-x-2 items-center justify-center"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-        <Image src="/assets/search-white.svg" alt="search" width={15} height={15} className="mx-5 lg:mx-0"/>
-          <p>Search</p>
-        </motion.button>
+      {/* Resume Builder Button (Hidden on Small Screens) */}
+      <motion.button
+        className="flex bg-foreground text-primary p-2 rounded-lg w-full space-x-2 items-center justify-center"
+        whileHover={{ scale: 1.05 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        <Image
+          src="/assets/search-white.svg"
+          alt="search"
+          width={15}
+          height={15}
+          className="mx-5 lg:mx-0"
+        />
+        <p>Search</p>
+      </motion.button>
     </div>
   );
 };

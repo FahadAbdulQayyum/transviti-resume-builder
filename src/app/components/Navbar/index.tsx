@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -19,7 +19,7 @@ const Navbar = () => {
     { label: "Messages", href: "TopCompany" },
     { label: "Notifications", href: "TopCompany" },
   ];
-  
+
   return (
     <motion.div
       className="bg-white flex justify-between items-center px-4 sm:px-standardPadding py-2"
@@ -49,16 +49,16 @@ const Navbar = () => {
         </motion.div>
 
         {/* Desktop Menu (Hidden on Small Screens) */}
-        <span 
-            className="hidden lg:flex space-x-4 text-textClr"
-        >
-        {Menu.map(v=> <motion.ul
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-        >
-          <li>{v.label}</li>
-          </motion.ul>)}
+        <span className="hidden lg:flex space-x-4 text-textClr">
+          {Menu.map((v) => (
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              <li>{v.label}</li>
+            </motion.ul>
+          ))}
         </span>
 
         {/* Hamburger Menu (Visible on Small Screens) */}
@@ -135,7 +135,11 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <ul className="space-y-6 text-textClr p-4">
-              {Menu.map(v=><li><Link href={v.href}>{v.label}</Link></li>)}
+              {Menu.map((v) => (
+                <li>
+                  <Link href={v.href}>{v.label}</Link>
+                </li>
+              ))}
             </ul>
           </motion.div>
         )}

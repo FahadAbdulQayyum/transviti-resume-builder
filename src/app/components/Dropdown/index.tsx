@@ -10,7 +10,9 @@ const Dropdown: React.FC<DropdownProps> = ({
   onSelect,
 }) => {
   // State to track the selected option and dropdown visibility
-  const [selectedOption, setSelectedOption] = useState(defaultValue || placeholder);
+  const [selectedOption, setSelectedOption] = useState(
+    defaultValue || placeholder
+  );
   const [isOpen, setIsOpen] = useState(false);
 
   // Handle Option Selection
