@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-// Define Props Type
-interface DropdownProps {
-  options: string[]; // Array of dropdown options
-  placeholder?: string; // Placeholder text (optional)
-  defaultValue?: string; // Default selected value (optional)
-  onSelect: (selectedOption: string) => void; // Callback for option selection
-}
+import { DropdownProps } from "@/utils/types/DropdownProps";
 
 const Dropdown: React.FC<DropdownProps> = ({
   options,
