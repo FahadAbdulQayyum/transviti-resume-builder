@@ -4,21 +4,28 @@ import React, { useEffect, useState } from "react";
 import SearchComponent from "../SearchComponent";
 import Category from "../Category";
 import CardComponent from "../CardComponent";
+import Loader from "../Loader";
 
 // Dashboard component displays the main dashboard with job listings and search functionality
 const Dashboard = () => {
 
   const [dataArray, setDataArray] = useState([]);
+  const [loading, setLoading] = useState(true); // Add loading state
   
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetch("/data.json");
       const res = await data.json();
       setDataArray(res.data);
+      setLoading(false); // Set loading to false after data is fetched
     }
 
     fetchData();
   }, []);
+
+  if (loading) {
+    return <div className='flex justify-center items-center h-screen'><Loader/>;</div>; // Display loader while loading
+  }
 
   return (
     <div className="w-full space-y-4">
